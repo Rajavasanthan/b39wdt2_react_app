@@ -135,7 +135,7 @@ function App() {
                         Edit
                       </button>
                       <button
-                        onClick={() => deleteProduct("63689bdca3c9109a49d53f0c")}
+                        onClick={() => deleteProduct(product._id)}
                         className="btn btn-danger btn-sm"
                       >
                         Delete
