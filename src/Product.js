@@ -46,7 +46,7 @@ function Product() {
               Authorization: localStorage.getItem("myreact"),
             },
           });
-          const pIndex = productList.findIndex((p) => p.id == productId);
+          const pIndex = productList.findIndex((p) => p._id == productId);
           productList[pIndex] = values;
           setProductList([...productList]);
           formik.resetForm();
