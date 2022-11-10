@@ -77,7 +77,7 @@ function Product() {
 
   const editProduct = async (id) => {
     try {
-      const product = await axios.get(`${config.api}/products/${id}`, {
+      const product = await axios.get(`${config.api}/product/${id}`, {
         headers: {
           Authorization: localStorage.getItem("myreact"),
         },
